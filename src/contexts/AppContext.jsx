@@ -10,18 +10,20 @@ const AppContextProvider = ({ children }) => {
   const location = useLocation();
   let currentPage = location.pathname;
 
+  //======================api base url from env
+  const baseUrl = import.meta.env.VITE_APP_API_BASE_URL;
+
   const [validationErr, setValidationErr] = useState("");
   const [submitErr, setSubmitErr] = useState("");
   const [buttonLoader, setButtonLoader] = useState(false);
 
+  //====================================to handle contact us input data
   const [contactData, setContactData] = useState({
     first_name: "",
     email: "",
     phone_number: "",
     message: "",
   });
-
-  //   console.log("contactData", contactData);
 
   const handleContactChange = (e) => {
     setValidationErr("");
@@ -37,11 +39,13 @@ const AppContextProvider = ({ children }) => {
 
   const [contactResponse, setContactResponse] = useState("");
 
+  //===========================to submit contact data
   const submitContact = async () => {
     try {
       setButtonLoader(true);
+      setSubmitErr("");
       const response = await axios.post(
-        "https://backend.getlinked.ai/hackathon/contact-form",
+        `${baseUrl}/hackathon/contact-form`,
         contactData
       );
       console.log("response", response);
@@ -65,6 +69,88 @@ const AppContextProvider = ({ children }) => {
     }
   };
 
+  //=====================================to get categories
+  const [fetching, setFecting] = useState(false);
+  const [categories, setCategories] = useState([]);
+
+  const getCategories = async () => {
+    try {
+      setFecting(true);
+      const response = await axios.get(`${baseUrl}/hackathon/categories-list`);
+      console.log("response", response);
+      setCategories(response.data);
+    } catch (error) {
+      // setSubmitErr(error?.message);
+      console.log("error", error);
+    } finally {
+      setFecting(false);
+    }
+  };
+
+  //====================================to handle register input data
+  const [registerData, setRegisterData] = useState({
+    team_name: "",
+    email: "",
+    phone_number: "",
+    project_topic: "",
+    category: 0,
+    group_size: 0,
+    privacy_poclicy_accepted: false,
+  });
+
+  const handleRegisterChange = (e) => {
+    setValidationErr("");
+    setSubmitErr("");
+    const { id, value, checked } = e.target;
+    setRegisterData((prev) => {
+      return {
+        ...prev,
+        [id]:
+          id === "privacy_poclicy_accepted"
+            ? checked
+            : id === "group_size" || id === "category"
+            ? Number(value)
+            : value,
+      };
+    });
+  };
+
+  const [regSuccess, setRegSuccess] = useState(false);
+
+  //===========================to submit register data
+  const submitReg = async () => {
+    try {
+      setButtonLoader(true);
+      setSubmitErr("");
+      const response = await axios.post(
+        `${baseUrl}/hackathon/registration`,
+        registerData
+      );
+      console.log("response", response);
+      if (response?.status === 201) {
+        setRegSuccess(true);
+        setRegisterData({
+          team_name: "",
+          email: "",
+          phone_number: "",
+          project_topic: "",
+          category: 0,
+          group_size: 0,
+          privacy_poclicy_accepted: false,
+        });
+      }
+    } catch (error) {
+      if (error?.response?.status === 400) {
+        setSubmitErr(error?.response?.data?.email[0]);
+      } else {
+        setSubmitErr(error?.message);
+      }
+      console.log("error", error);
+    } finally {
+      setButtonLoader(false);
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -77,6 +163,14 @@ const AppContextProvider = ({ children }) => {
         submitContact,
         submitErr,
         contactResponse,
+        getCategories,
+        fetching,
+        categories,
+        registerData,
+        handleRegisterChange,
+        submitReg,
+        regSuccess,
+        setRegSuccess,
       }}
     >
       {children}

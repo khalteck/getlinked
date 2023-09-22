@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAppContext } from "../contexts/AppContext";
+import Button from "./Button";
 
 const Header = () => {
   const { currentPage } = useAppContext();
@@ -16,9 +17,9 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full h-[60px] bg-transparent text-white md:h-[100px] border-b md:gap-20 lg:gap-[150px] justify-between px-8 lg:px-[150px] items-center transition-all duration-700 fixed top-0 left-0 z-[999] font-mont font-medium ${
+      className={`w-full h-[60px] bg-gradient-to-b from-[#150E28] to-transparent text-white md:h-[100px] md:gap-20 lg:gap-[150px] justify-between px-8 lg:px-[150px] items-center transition-all duration-700 fixed top-0 left-0 z-[999] font-mont font-medium ${
         currentPage === "/"
-          ? "border-white/10 flex"
+          ? "border-white/10 border-b flex"
           : "border-transparent hidden md:flex"
       }`}
     >
@@ -27,7 +28,7 @@ const Header = () => {
           <img
             alt=""
             src="/images/logo.png"
-            className="w-[90px] h-auto md:w-[180px] md:min-w-[180px] rounded-sm md:rounded-b-lg"
+            className="w-[90px] h-auto md:w-[120px] lg:w-[180px] md:min-w-[100px] rounded-sm md:rounded-b-lg"
           />
         </div>
       </Link>
@@ -73,9 +74,7 @@ const Header = () => {
           onClick={() => navigate("/register")}
           className={`lg:ml-[120px] md:ml-[50px]`}
         >
-          <button className="w-fit h-fit px-10 py-2 text-white bg-gradient-to-r from-[#903AFF] to-[#FE34B9] text-[.9rem] rounded-sm hover:opacity-70 transition-all duration-300">
-            Register
-          </button>
+          <Button type="normal" title="Register" />
         </li>
       </ul>
 
@@ -150,9 +149,7 @@ const Header = () => {
               }}
               className="py-2"
             >
-              <button className="w-fit h-fit px-10 py-2 text-white bg-gradient-to-r from-[#903AFF] to-[#FE34B9] text-[.9rem] rounded-sm hover:opacity-70 transition-all duration-300">
-                Register
-              </button>
+              <Button type="normal" title="Register" />
             </li>
           </ul>
         </div>
