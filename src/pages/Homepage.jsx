@@ -8,6 +8,8 @@ import ButtonSmall from "../components/ButtonSmall";
 import Button from "../components/Button";
 import AccordionFaq from "../components/Accordion";
 import Footer from "../components/Footer";
+import Section9 from "../components/Section9";
+import Section8 from "../components/Section8";
 
 const Homepage = () => {
   useEffect(() => {
@@ -543,100 +545,59 @@ const Homepage = () => {
           /> */}
         </section>
 
-        <section className="min-h-[300px] px-10 lg:px-[150px] pt-8 bg-transparent border-white/10 border-b font-medium"></section>
+        {/* section 7 */}
+        <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-16 bg-transparent border-white/10 border-b font-medium bg-red-500 relative">
+          <div className="w-full flex md:flex-row flex-col justify-center items-center gap-[10%]">
+            <img
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              className="w-[90%] sm:w-[70%] mx-auto md:mx-0 md:w-[45%] h-auto"
+              alt=""
+              src="/images/cup.png"
+            />
 
-        {/* section 8 */}
-        <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-[100px] bg-transparent border-white/10 border-b font-medium bg-red-500 relative">
-          <div className="w-full">
-            <div className="w-full flex flex-col gap-5">
+            <div className="w-full flex flex-col gap-5 mt-14 md:mt-0">
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                className="text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold text-center"
+                className="text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold text-center md:text-start"
               >
-                <p>Partners and Sponsors</p>
+                <p>Prizes and</p>
+                <p className="text-[#D434FE]">Rewards</p>
               </h2>
               <p
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
-                className="w-full md:w-[500px] text-center text-[.85rem] lg:text-[1rem] mx-auto"
+                className="tracking-wide leading-relaxed text-center md:text-start text-[.85rem] lg:text-[1rem]"
               >
-                Getlinked Hackathon 1.0 is honored to have the following major
-                companies as its partners and sponsors
+                Highlight of the prizes or rewards for winners and for
+                participants.
               </p>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-              className="w-full min-h-[150px] md:min-h-[500px] mt-10 border border-[#D434FE] rounded-lg flex justify-center items-center"
-            >
-              <div className="w-[70%] min-h-[100px] md:min-h-[200px] grid grid-cols-3">
-                <div className="flex justify-center items-center p-5 relative">
-                  <img
-                    className="w-[80%] md:w-[50%] h-auto"
-                    alt=""
-                    src="/images/p1.png"
-                  />
-                  <div className="w-[25px] h-[25px] md:w-[50px] md:h-[50px] bg-[#150E28] rounded-full absolute bottom-[-12.5px] right-[-12.5px] md:bottom-[-25px] md:right-[-25px]"></div>
-                </div>
-                <div className="flex justify-center items-center border-x-2 border-[#D434FE] p-5">
-                  <img
-                    className="w-[90%] md:w-[70%] h-auto"
-                    alt=""
-                    src="/images/p2.png"
-                  />
-                </div>
-                <div className="flex justify-center items-center border-[#D434FE] p-5 relative">
-                  <div className="w-[25px] h-[25px] md:w-[50px] md:h-[50px] bg-[#150E28] rounded-full absolute bottom-[-12.5px] left-[-12.5px] md:bottom-[-25px] md:left-[-25px]"></div>
-                  <img
-                    className="w-[80%] md:w-[50%] h-auto"
-                    alt=""
-                    src="/images/p3.png"
-                  />
-                </div>
-                <div className="flex justify-center items-center border-t-2 border-[#D434FE] p-5">
-                  <img
-                    className="w-[80%] md:w-[50%] h-auto"
-                    alt=""
-                    src="/images/p4.png"
-                  />
-                </div>
-                <div className="flex justify-center items-center border-x-2 border-t-2 border-[#D434FE] p-5">
-                  <img
-                    className="w-[90%] md:w-[70%] h-auto"
-                    alt=""
-                    src="/images/p5.png"
-                  />
-                </div>
-                <div className="flex justify-center items-center border-t-2 border-[#D434FE] p-5">
-                  <img
-                    className="w-[90%] md:w-[70%] h-auto"
-                    alt=""
-                    src="/images/p6.png"
-                  />
-                </div>
-              </div>
+              <img
+                className="w-full h-auto mt-8"
+                alt=""
+                src="/images/Rewards.png"
+              />
             </div>
           </div>
 
           <img
-            className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[30px] md:bottom-[170px] md:right-[50%] right-[75%] blink4"
+            className="w-5 h-5 md:w-6 md:h-6 absolute top-[120px] md:top-[200px] left-[50px] md:left-[120px] blink1"
             alt=""
-            src="/images/star3.png"
+            src="/images/star1.png"
           />
           <img
-            className="w-5 h-5 md:w-6 md:h-6 absolute top-[50%] md:top-[100px] left-[90%] md:left-[30%] blink1"
+            className="w-3 h-3 md:w-6 md:h-6 absolute top-[50%] md:top-[170px] md:right-[10%] right-[7%] blink2"
             alt=""
-            src="/images/star4.png"
+            src="/images/star2.png"
           />
-          <img
-            className="w-3 h-3 md:w-6 md:h-6 absolute top-[150px] left-[40px] block md:hidden blink4"
+          {/* <img
+            className="w-7 h-7 md:w-14 md:h-14 absolute bottom-[54%] md:bottom-[60px] left-[50%] md:left-[45%] rotate"
             alt=""
-            src="/images/star3.png"
-          />
+            src="/images/spiral.png"
+          /> */}
 
           <img
             className="w-[300px] h-auto absolute bottom-[-150px] right-0 hidden md:block"
@@ -659,157 +620,11 @@ const Homepage = () => {
             src="/images/flare-s3-mob-2.png"
           />
         </section>
+        {/* section 8 */}
+        <Section8 />
 
         {/* section 9 */}
-        <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-12 md:py-[10%] bg-transparent font-medium relative">
-          <div className="w-full flex md:flex-row-reverse flex-col-reverse justify-center items-center gap-[10%]">
-            <div className="w-[90%] sm:w-[80%] md:w-[90%] lg:w-[70%] h-fit relative mt-16 md:mt-0">
-              <img
-                className="w-[80%] h-auto absolute left-[12%] top-[-12%] md:top-[-20%]"
-                alt=""
-                src="/images/shield.png"
-              />
-              <img
-                className="w-3 h-3 md:w-6 md:h-6 absolute right-[23%] top-[8%] md:top-[-2%] blink1"
-                alt=""
-                src="/images/star3.png"
-              />
-              <img
-                className="w-3 h-3 md:w-6 md:h-6 absolute left-[20%] bottom-[35%] md:bottom-[25%] blink4"
-                alt=""
-                src="/images/star3.png"
-              />
-              <img
-                className="w-3 h-3 md:w-6 md:h-6 absolute right-[-5%] bottom-[8%] md:bottom-[18%] blink1"
-                alt=""
-                src="/images/star4.png"
-              />
-              <img
-                className="w-3 h-3 md:w-6 md:h-6 absolute left-[30%] bottom-[35%] md:bottom-[38%] blink4"
-                alt=""
-                src="/images/star1.png"
-              />
-
-              <img
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-                className="w-[90%] sm:w-[70%] mx-auto md:mx-0 md:w-full h-auto mt-7 md:mt-0"
-                alt=""
-                src="/images/hero9.png"
-              />
-            </div>
-
-            <div className="w-full flex flex-col gap-5">
-              <h2
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                className="text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold text-center md:text-start"
-              >
-                <p>Privacy Policy and</p>
-                <p className="text-[#D434FE]">Terms</p>
-              </h2>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-                className="tracking-wide leading-relaxed text-center md:text-start text-[.75rem]"
-              >
-                Last updated on September 12, 2023
-              </p>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-                className="tracking-wide leading-relaxed text-center md:text-start text-[.85rem] lg:text-[1rem] mt-4"
-              >
-                Below are our privacy & policy, which outline a lot of goodies.
-                it’s our aim to always take of our participant
-              </p>
-
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-                className="w-full md:max-w-[700px] mb-7 md:mb-0 p-7 md:p-16 bg-[#1c1530]/80 rounded-lg mt-10 border border-[#D434FE] text-[.9rem]"
-              >
-                <p className="mb-4 leading-relaxed">
-                  At getlinked tech Hackathon 1.0, we value your privacy and are
-                  committed to protecting your personal information. This
-                  Privacy Policy outlines how we collect, use, disclose, and
-                  safeguard your data when you participate in our tech hackathon
-                  event. By participating in our event, you consent to the
-                  practices described in this policy.
-                </p>
-
-                <h3 className="text-[#D434FE] font-bold text-[1.15rem] mt-4">
-                  Licensing Policy
-                </h3>
-                <p className="font-bold mt-3">
-                  Here are terms of our Standard License:
-                </p>
-                <div className="w-full flex flex-col gap-4 mt-4">
-                  <div className="w-full flex gap-3">
-                    <img
-                      className="w-4 h-4 md:w-5 md:h-5"
-                      alt=""
-                      src="/images/check.png"
-                    />
-                    <p>
-                      The Standard License grants you a non-exclusive right to
-                      navigate and register for our event
-                    </p>
-                  </div>
-                  <div className="w-full flex gap-3">
-                    <img
-                      className="w-4 h-4 md:w-5 md:h-5"
-                      alt=""
-                      src="/images/check.png"
-                    />
-                    <p>
-                      You are licensed to use the item available at any free
-                      source sites, for your project developement
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-8 text-center md:hidden block">
-                  <ButtonSmall type="normal" title="Read More" />
-                </div>
-                <div className="mt-8 text-center hidden md:block">
-                  <Button type="normal" title="Read More" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <img
-            className="w-3 h-3 md:w-6 md:h-6 absolute top-[30px] md:top-[170px] md:right-[50%] right-[75%] blink3"
-            alt=""
-            src="/images/star2.png"
-          />
-          <img
-            className="w-5 h-5 md:w-6 md:h-6 absolute top-[50%] md:top-[100px] left-[90%] md:left-[30%] blink1"
-            alt=""
-            src="/images/star4.png"
-          />
-          <img
-            className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[250px] left-[40px] blink4"
-            alt=""
-            src="/images/star2.png"
-          />
-
-          <img
-            className="md:w-[400px] lg:w-[800px] h-auto absolute bottom-[-180px] left-[0px] opacity-50 hidden md:block"
-            alt=""
-            src="/images/flare-s9.png"
-          />
-          <img
-            className="w-[300px] h-auto absolute top-[40%] left-0 block md:hidden opacity-50"
-            alt=""
-            src="/images/flare-s3-mob-2.png"
-          />
-        </section>
+        <Section9 />
       </main>
 
       <Footer />
