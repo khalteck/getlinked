@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Unica+One&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -101,7 +101,7 @@
   }
 
   .rotate {
-    animation: rotate 25s linear infinite;
+    animation: rotate 12s linear infinite;
   }
 
   @keyframes rotate {
@@ -188,8 +188,9 @@
   }
 
   ::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
     height: 3px;
+    background: rgba(21, 14, 40, 0.5);
   }
   @media (max-width: 1150px) {
     ::-webkit-scrollbar {
@@ -199,7 +200,7 @@
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(170, 170, 170, 0.5);
+    background: rgba(169, 57, 238, 0.5);
     border-radius: 5px;
   }
 

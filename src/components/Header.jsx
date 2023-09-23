@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAppContext } from "../contexts/AppContext";
 import Button from "./Button";
@@ -15,11 +15,34 @@ const Header = () => {
     setOpenMenu((prevState) => !prevState);
   }
 
+  const [scrollBackground, setScrollBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const scrollThreshold = 100;
+
+      setScrollBackground(scrollY > scrollThreshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header
-      className={`w-full h-[60px] bg-gradient-to-b from-[#150E28] to-transparent text-white md:h-[100px] md:gap-20 lg:gap-[150px] justify-between px-8 lg:px-[150px] items-center transition-all duration-700 fixed top-0 left-0 z-[999] font-mont font-medium ${
+      className={`w-full h-[60px]  ${
+        scrollBackground
+          ? "bg-[#150E28]"
+          : !scrollBackground && currentPage === "/"
+          ? "bg-gradient-to-b from-[#150E28] to-transparent"
+          : "bg-gradient-to-b from-[#150E28] to-transparent"
+      } text-white md:h-[100px] md:gap-20 lg:gap-[150px] justify-between px-8 lg:px-[150px] items-center transition-all duration-700 fixed top-0 left-0 z-[999] font-mont font-medium ${
         currentPage === "/"
-          ? "border-white/10 border-b flex"
+          ? "border-gray-100/10 border-b flex"
           : "border-transparent hidden md:flex"
       }`}
     >
