@@ -3,8 +3,14 @@ import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Homepage = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const navigate = useNavigate();
 
   const [countdown, setCountdown] = useState({
@@ -158,17 +164,29 @@ const Homepage = () => {
         <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-16 bg-transparent border-white/10 border-b font-medium bg-red-500 relative">
           <div className="w-full flex md:flex-row flex-col justify-center items-center gap-[10%]">
             <img
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               className="w-[90%] sm:w-[70%] mx-auto md:mx-0 md:w-[45%] h-auto"
               alt=""
               src="/images/Thebigidea.png"
             />
 
             <div className="w-full flex flex-col gap-5 mt-14 md:mt-0">
-              <h2 className="text-[1.25rem] md:text-[2rem] font-bold text-center md:text-start">
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold text-center md:text-start"
+              >
                 <p>Introduction to getlinked</p>
                 <p className="text-[#D434FE]">techHackathon 1.0</p>
               </h2>
-              <p className="tracking-wide leading-relaxed text-center md:text-start text-[.85rem] md:text-[1rem]">
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                className="tracking-wide leading-relaxed text-center md:text-start text-[.85rem] lg:text-[1rem]"
+              >
                 Our tech hackathon is a melting pot of visionaries, and its
                 purpose is as clear as day: to shape the future. Whether you're
                 a coding genius, a design maverick, or a concept wizard, you'll
@@ -191,7 +209,7 @@ const Homepage = () => {
             src="/images/star2.png"
           />
           <img
-            className="w-7 h-7 md:w-14 md:h-14 absolute bottom-[56%] md:bottom-[60px] left-[50%] md:left-[45%] rotate"
+            className="w-7 h-7 md:w-14 md:h-14 absolute bottom-[54%] md:bottom-[60px] left-[50%] md:left-[45%] rotate"
             alt=""
             src="/images/spiral.png"
           />
@@ -201,17 +219,29 @@ const Homepage = () => {
         <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-2 md:py-5 bg-transparent border-white/10 border-b font-medium bg-red-500 relative">
           <div className="w-full flex md:flex-row-reverse flex-col justify-center items-center gap-[10%]">
             <img
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               className="w-full sm:w-[80%] md:mx-0 md:w-[50%] h-auto"
               alt=""
               src="/images/hero3.png"
             />
 
             <div className="w-full flex flex-col gap-5">
-              <h2 className="text-[1.25rem] md:text-[2rem] font-bold text-center md:text-start">
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold text-center md:text-start"
+              >
                 <p>Rules and</p>
                 <p className="text-[#D434FE]">Guidelines</p>
               </h2>
-              <p className="tracking-wide leading-relaxed text-center md:text-start text-[.85rem] md:text-[1rem]">
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                className="tracking-wide leading-relaxed text-center md:text-start text-[.85rem] lg:text-[1rem]"
+              >
                 Our tech hackathon is a melting pot of visionaries, and its
                 purpose is as clear as day: to shape the future. Whether you're
                 a coding genius, a design maverick, or a concept wizard, you'll
@@ -245,7 +275,7 @@ const Homepage = () => {
             src="/images/flare-s3-1.png"
           />
           <img
-            className="w-[800px] h-auto absolute top-[-150px] left-[50px] opacity-50 hidden md:block"
+            className="md:w-[400px] lg:w-[800px] h-auto absolute top-[-150px] left-[50px] opacity-50 hidden md:block"
             alt=""
             src="/images/flare-s3-2.png"
           />
