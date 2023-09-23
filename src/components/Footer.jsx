@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
   return (
     <footer className="w-full bg-[#100B20] pt-[100px] px-10 lg:px-[150px] text-[.95rem] text-white relative">
       <div className="w-full mb-[60px] px-4 sm:px-[30px] lg:px-[80px] flex flex-col md:flex-row gap-8 justify-between">
