@@ -47,13 +47,23 @@ const Section7 = () => {
       <img
         className="w-3 h-3 md:w-6 md:h-6 absolute top-[50%] md:top-[170px] md:right-[10%] right-[7%] blink2"
         alt=""
+        src="/images/star3.png"
+      />
+      <img
+        className="w-3 h-3 md:w-6 md:h-6 absolute top-[50%] md:top-[270px] md:right-[50%] right-[50%] blink2"
+        alt=""
+        src="/images/star3.png"
+      />
+      <img
+        className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[50%] md:bottom-[100px] md:left-[10%] left-[7%] blink3"
+        alt=""
+        src="/images/star3.png"
+      />
+      <img
+        className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[50%] md:bottom-[170px] md:right-[10%] right-[7%] blink4"
+        alt=""
         src="/images/star2.png"
       />
-      {/* <img
-      className="w-7 h-7 md:w-14 md:h-14 absolute bottom-[54%] md:bottom-[60px] left-[50%] md:left-[45%] rotate"
-      alt=""
-      src="/images/spiral.png"
-    /> */}
 
       <img
         className="w-[300px] h-auto absolute bottom-[-150px] right-0 hidden md:block"

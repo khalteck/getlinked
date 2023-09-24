@@ -1,3 +1,4 @@
+import Button from "./Button";
 import ButtonSmall from "./ButtonSmall";
 
 const Section9 = () => {
@@ -117,12 +118,12 @@ const Section9 = () => {
               </div>
             </div>
 
-            <div className="mt-8 text-center block">
+            <div className="mt-8 text-center block md:hidden">
               <ButtonSmall type="normal" title="Read More" />
             </div>
-            {/* <div className="mt-8 text-center hidden md:block">
-            <Button type="normal" title="Read More" />
-          </div> */}
+            <div className="mt-8 text-center hidden md:block">
+              <Button type="normal" title="Read More" />
+            </div>
           </div>
         </div>
       </div>

@@ -37,19 +37,19 @@ const Section6 = () => {
       </div>
 
       <img
-        className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[30px] md:bottom-[170px] md:right-[50%] right-[75%] blink4"
+        className="w-5 h-5 md:w-6 md:h-6 absolute top-[50%] md:top-[250px] left-[90%] md:left-[25%] blink1"
+        alt=""
+        src="/images/star2.png"
+      />
+      <img
+        className="w-3 h-3 md:w-6 md:h-6 absolute top-[30px] md:top-[50%] md:right-[25%] right-[75%] blink4"
         alt=""
         src="/images/star3.png"
       />
       <img
-        className="w-5 h-5 md:w-6 md:h-6 absolute top-[50%] md:top-[100px] left-[90%] md:left-[30%] blink1"
+        className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[50px] md:bottom-[150px] left-[5%] md:left-[20%] blink4"
         alt=""
         src="/images/star4.png"
-      />
-      <img
-        className="w-3 h-3 md:w-6 md:h-6 absolute top-[150px] left-[40px] block md:hidden blink4"
-        alt=""
-        src="/images/star3.png"
       />
     </section>
   );

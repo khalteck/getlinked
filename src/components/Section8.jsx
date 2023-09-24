@@ -77,17 +77,17 @@ const Section8 = () => {
       </div>
 
       <img
-        className="w-3 h-3 md:w-6 md:h-6 absolute bottom-[30px] md:bottom-[170px] md:right-[50%] right-[75%] blink4"
+        className="w-3 h-3 md:w-6 md:h-6 absolute top-[50%] md:top-[200px] md:left-[10%] left-[10%] blink4"
         alt=""
-        src="/images/star3.png"
+        src="/images/star2.png"
       />
       <img
-        className="w-5 h-5 md:w-6 md:h-6 absolute top-[50%] md:top-[100px] left-[90%] md:left-[30%] blink1"
+        className="w-5 h-5 md:w-6 md:h-6 absolute top-[60%] md:top-[40%] left-[50%] md:left-[55%] blink1"
         alt=""
-        src="/images/star4.png"
+        src="/images/star1.png"
       />
       <img
-        className="w-3 h-3 md:w-6 md:h-6 absolute top-[150px] left-[40px] block md:hidden blink4"
+        className="w-3 h-3 md:w-6 md:h-6 absolute left-[80%] bottom-[80px] md:bottom-[150px] md:left-[48%] blink4"
         alt=""
         src="/images/star3.png"
       />
