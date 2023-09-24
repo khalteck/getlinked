@@ -1,16 +1,26 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
+import Typewriter from "typewriter-effect";
 
 const Section1 = ({ countdown }) => {
   const navigate = useNavigate();
+
   return (
     <section className="min-h-fit pt-14 md:pt-[100px] bg-transparent font-medium relative bg-flare3mob md:bg-flare3 bg-[length:400px_auto] md:bg-[length:600px_auto] lg:bg-[length:800px_auto] md:bg-left-top bg-no-repeat">
       <section className="w-full h-fit z-10 md:pl-10 lg:pl-[150px] pt-8 border-white/10 border-b md:bg-metrix bg-contain bg-right bg-no-repeat bg-[#150E28]/10">
-        <div className="text-[.9rem] md:text-[1.5rem] lg:text-[2rem] font-bold text-end relative w-fit md:w-full mx-auto md:pr-[100px]">
-          <i className="">Igniting a Revolution in HR Innovation</i>
+        <div className="text-[.9rem] md:text-[1.5rem] lg:text-[2rem] font-bold md:text-end relative w-full md:w-full text-center md:pr-[100px]">
+          <i className="">
+            <Typewriter
+              options={{
+                strings: ["Igniting a Revolution in HR Innovation"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </i>
           <img
-            className="w-[100px] md:w-[180px] lg:w-[230px] h-auto absolute bottom-[-10px] right-0 md:right-[100px]"
+            className="w-[100px] md:w-[180px] lg:w-[230px] h-auto absolute bottom-[-10px] right-[13%] md:right-[100px]"
             alt=""
             src="/images/line1.png"
           />
