@@ -18,8 +18,6 @@ export default {
         metrix: "url('/images/metrix.png')",
         flare3: "url('/images/flare3.png')",
         flare3mob: "url('/images/flare3mob.png')",
-        // contact: "url('/images/contact.jpg')",
-        // service: "url('/images/house.jpg')",
       },
     },
   },

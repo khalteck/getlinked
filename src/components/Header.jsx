@@ -4,7 +4,7 @@ import { useAppContext } from "../contexts/AppContext";
 import Button from "./Button";
 
 const Header = () => {
-  const { currentPage } = useAppContext();
+  const { currentPage, scrollToTimeline } = useAppContext();
 
   const [openMenu, setOpenMenu] = useState(false);
   const [opening, setopening] = useState(false);
@@ -68,19 +68,19 @@ const Header = () => {
 
       <ul className="md:gap-7 lg:gap-14 text-[.9rem] items-center hidden md:flex">
         <li
-          //   onClick={() => navigate("/")}
+          onClick={() => scrollToTimeline("timeline")}
           className={`cursor-pointer hover:gradient-text transition-all duration-300`}
         >
           Timeline
         </li>
         <li
-          //   onClick={() => navigate("/about")}
+          onClick={() => scrollToTimeline("overview")}
           className={`cursor-pointer hover:gradient-text transition-all duration-300 }`}
         >
           Overview
         </li>
         <li
-          //   onClick={() => navigate("/service")}
+          onClick={() => scrollToTimeline("faqs")}
           className={`cursor-pointer hover:gradient-text transition-all duration-300`}
         >
           FAQs
@@ -128,7 +128,7 @@ const Header = () => {
             <li
               onClick={() => {
                 handleClick();
-                // navigate("/");
+                scrollToTimeline("timeline");
               }}
               className="py-2"
             >
@@ -138,7 +138,7 @@ const Header = () => {
             <li
               onClick={() => {
                 handleClick();
-                // navigate("/about");
+                scrollToTimeline("overview");
               }}
               className="py-2"
             >
@@ -148,7 +148,7 @@ const Header = () => {
             <li
               onClick={() => {
                 handleClick();
-                // navigate("/service");
+                scrollToTimeline("faqs");
               }}
               className="py-2"
             >

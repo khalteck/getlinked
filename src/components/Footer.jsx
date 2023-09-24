@@ -1,9 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 
-// import { useNavigate } from "react-router-dom";
+import { useAppContext } from "../contexts/AppContext";
+
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
+  const { scrollToTimeline } = useAppContext();
+
+  // const address = " 27,Alara Street Yaba 100012 Lagos State";
+
+  // // Create a function to generate the Google Maps URL
+  // const getGoogleMapsUrl = () => {
+  //   const encodedAddress = encodeURIComponent(address);
+  //   return `https://www.google.com/maps?q=${encodedAddress}`;
+  // };
   return (
     <footer className="w-full bg-[#100B20] pt-[100px] px-10 lg:px-[150px] text-[.95rem] text-white relative">
       <div className="w-full mb-[60px] px-4 sm:px-[30px] lg:px-[80px] flex flex-col md:flex-row gap-8 justify-between">
@@ -17,11 +28,17 @@ const Footer = () => {
             young and talented individuals in the field of technology
           </li>
           <li className="mt-12 md:mt-24 flex gap-3 items-center">
-            <p className="cursor-pointer hover:gradient-text transition-all duration-300">
+            <p
+              onClick={() => scrollToTimeline("privacy")}
+              className="cursor-pointer hover:gradient-text transition-all duration-300"
+            >
               Terms od Use
             </p>
             <div className="w-[3px] h-6 rounded-full bg-[#D434FE]"></div>
-            <p className="cursor-pointer hover:gradient-text transition-all duration-300">
+            <p
+              onClick={() => scrollToTimeline("privacy")}
+              className="cursor-pointer hover:gradient-text transition-all duration-300"
+            >
               Privacy Policy
             </p>
           </li>
@@ -33,25 +50,25 @@ const Footer = () => {
           </li>
 
           <li
-            //   onClick={() => navigate("/about")}
+            onClick={() => scrollToTimeline("overview")}
             className={`w-fit cursor-pointer hover:gradient-text transition-all duration-300 }`}
           >
             Overview
           </li>
           <li
-            //   onClick={() => navigate("/")}
+            onClick={() => scrollToTimeline("timeline")}
             className={`w-fit cursor-pointer hover:gradient-text transition-all duration-300`}
           >
             Timeline
           </li>
           <li
-            //   onClick={() => navigate("/service")}
+            onClick={() => scrollToTimeline("faqs")}
             className={`w-fit cursor-pointer hover:gradient-text transition-all duration-300`}
           >
             FAQs
           </li>
           <li
-            //   onClick={() => navigate("/service")}
+            onClick={() => navigate("/register")}
             className={`w-fit cursor-pointer hover:gradient-text transition-all duration-300`}
           >
             Register
@@ -95,18 +112,17 @@ const Footer = () => {
             <img className="w-5 h-auto" alt="" src="/images/tel.png" />
             <a href="tel:+2346707653444">Tel: +2346707653444</a>
           </li>
-          <li
-            // onClick={() => navigate("/")}
-            className="cursor-pointer hover:gradient-text transition-all duration-300 flex gap-3 items-start"
-          >
-            <img className="w-5 h-auto" alt="" src="/images/location.png" />
+          <a href="#" target="_blank" rel="noReferrer">
+            <li className="cursor-pointer hover:gradient-text transition-all duration-300 flex gap-3 items-start">
+              <img className="w-5 h-auto" alt="" src="/images/location.png" />
 
-            <p>
-              27,Alara Street
-              <br /> Yaba 100012
-              <br /> Lagos State
-            </p>
-          </li>
+              <p>
+                27,Alara Street
+                <br /> Yaba 100012
+                <br /> Lagos State
+              </p>
+            </li>
+          </a>
         </ul>
       </div>
       <div className="w-full h-[100px] pt-5 text-center">

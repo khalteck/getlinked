@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios";
 import { createContext, useContext, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const AppContext = createContext();
 
@@ -151,6 +151,27 @@ const AppContextProvider = ({ children }) => {
     }
   };
 
+  const navigate = useNavigate();
+
+  function scrollToTimeline(id) {
+    if (currentPage !== "/") {
+      navigate("/");
+
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 1000);
+    } else {
+      const section = document.getElementById(id);
+
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }
+
   return (
     <AppContext.Provider
       value={{
@@ -171,6 +192,7 @@ const AppContextProvider = ({ children }) => {
         submitReg,
         regSuccess,
         setRegSuccess,
+        scrollToTimeline,
       }}
     >
       {children}
