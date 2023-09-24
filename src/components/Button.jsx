@@ -11,7 +11,7 @@ const Button = ({ type, title, buttonLoader }) => {
       disabled={title === "Submit" && buttonLoader}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      className={`"h-fit px-14 py-3 text-white text-[.9rem] rounded-sm transition-all duration-300 ${
+      className={`"h-fit px-14 py-3 text-white text-[.9rem] rounded-md transition-all duration-300 ${
         hover
           ? "btn-hover"
           : "bg-gradient-to-r from-[#903AFF] to-[#FE34B9] border-2 border-[#1c1530]"
