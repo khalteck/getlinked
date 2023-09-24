@@ -208,4 +208,34 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(170, 170, 170, 0, 9);
   }
+
+  /* Basic styling for the text */
+  .typewriter-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000; /* Add a blinking cursor effect */
+    animation: typewriter 4s steps(40) infinite,
+      blink-caret 0.75s step-end infinite;
+  }
+
+  /* Keyframes for typewriter effect */
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* Keyframes for blinking cursor */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
 }
