@@ -113,6 +113,19 @@
     }
   }
 
+  .rotate2 {
+    animation: rotate2 25s linear infinite;
+  }
+
+  @keyframes rotate2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   .gradient-text {
     background-image: linear-gradient(to right, #903aff, #fe34b9);
     -webkit-background-clip: text;
