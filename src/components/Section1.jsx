@@ -20,7 +20,7 @@ const Section1 = ({ countdown }) => {
             />
           </i>
           <img
-            className="w-[100px] md:w-[180px] lg:w-[230px] h-auto absolute bottom-[-10px] right-[13%] md:right-[100px]"
+            className="w-[100px] md:w-[180px] lg:w-[230px] h-auto absolute bottom-[-10px] right-[13%] sm:right-[30%] md:right-[100px]"
             alt=""
             src="/images/line1.png"
           />
