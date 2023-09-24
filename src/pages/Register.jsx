@@ -4,6 +4,7 @@ import { useAppContext } from "../contexts/AppContext";
 import RegisterForm from "../components/RegisterForm";
 import { useEffect } from "react";
 import Congratulations from "../components/Congratulations";
+import ScrollToTop from "../ScrollToTop";
 
 const Register = () => {
   const {
@@ -87,11 +88,6 @@ const Register = () => {
 
       {/* flare decor */}
       <section className="w-full h-screen absolute top-0 left-0 z-0 overflow-hidden">
-        {/* <img
-          className="w-6 h-6 hidden md:block absolute top-[130px] right-[250px] blink4"
-          alt=""
-          src="/images/star4.png"
-        /> */}
         <img
           className="w-[400px] md:w-[650px] h-auto absolute top-5 md:top-[80px] left-[-20px] opacity-60"
           alt=""
@@ -105,6 +101,8 @@ const Register = () => {
       </section>
 
       {regSuccess && <Congratulations setRegSuccess={setRegSuccess} />}
+
+      <ScrollToTop />
     </>
   );
 };

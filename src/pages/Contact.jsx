@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import { useAppContext } from "../contexts/AppContext";
 import ContactForm from "../components/ContactForm";
+import ScrollToTop from "../ScrollToTop";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -172,6 +173,8 @@ const Contact = () => {
           src="/images/flare2.png"
         />
       </section>
+
+      <ScrollToTop />
     </>
   );
 };
