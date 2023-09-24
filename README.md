@@ -12,11 +12,9 @@ GetLinked is an app built with React, Vite, Context API, and Tailwind CSS. With 
 - Vite
 - Context API
 - Tailwind CSS
-- [Add any other technologies you've used]
 
 ## Features
 
-- Connect with ease: Effortlessly manage your connections and keep your network organized.
 - Streamlined interface: Enjoy a smooth and intuitive user experience designed for productivity.
 - Contextual data: Utilize the power of Context API to efficiently manage application state.
 - Responsive design: Access GetLinked on any device, ensuring a seamless experience on the go.
