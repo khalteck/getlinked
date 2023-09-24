@@ -48,7 +48,6 @@ const AppContextProvider = ({ children }) => {
         `${baseUrl}/hackathon/contact-form`,
         contactData
       );
-      console.log("response", response);
       if (response?.status === 201) {
         setContactResponse("Message sent successfully!");
         setContactData({
@@ -63,7 +62,6 @@ const AppContextProvider = ({ children }) => {
       }
     } catch (error) {
       setSubmitErr(error?.message);
-      console.log("error", error);
     } finally {
       setButtonLoader(false);
     }
@@ -77,10 +75,8 @@ const AppContextProvider = ({ children }) => {
     try {
       setFecting(true);
       const response = await axios.get(`${baseUrl}/hackathon/categories-list`);
-      console.log("response", response);
       setCategories(response.data);
     } catch (error) {
-      // setSubmitErr(error?.message);
       console.log("error", error);
     } finally {
       setFecting(false);
@@ -126,7 +122,6 @@ const AppContextProvider = ({ children }) => {
         `${baseUrl}/hackathon/registration`,
         registerData
       );
-      console.log("response", response);
       if (response?.status === 201) {
         setRegSuccess(true);
         setRegisterData({
@@ -145,7 +140,6 @@ const AppContextProvider = ({ children }) => {
       } else {
         setSubmitErr(error?.message);
       }
-      console.log("error", error);
     } finally {
       setButtonLoader(false);
     }
@@ -153,6 +147,7 @@ const AppContextProvider = ({ children }) => {
 
   const navigate = useNavigate();
 
+  //=======================================to handle scroll to sections
   function scrollToTimeline(id) {
     if (currentPage !== "/") {
       navigate("/");

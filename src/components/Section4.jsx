@@ -94,18 +94,18 @@ const Section4 = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
-            className="mt-8 text-center md:text-start md:hidden block"
+            className="mt-8 text-center md:text-start"
           >
             <ButtonSmall type="normal" title="Read More" />
           </div>
-          <div
+          {/* <div
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
             className="mt-8 text-center md:text-start hidden md:block"
           >
             <Button type="normal" title="Read More" />
-          </div>
+          </div> */}
         </div>
       </div>
 

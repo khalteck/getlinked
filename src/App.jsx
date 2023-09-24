@@ -3,6 +3,7 @@ import "./index.css";
 import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
 
+//=============================lazy load pages
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Register = lazy(() => import("./pages/Register"));
