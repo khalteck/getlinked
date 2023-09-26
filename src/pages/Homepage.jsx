@@ -29,7 +29,7 @@ const Homepage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
-      const targetDate = new Date("September 26, 2023");
+      const targetDate = new Date("September 28, 2023");
 
       // Calculate the time difference between today and the target date
       const timeDiff = targetDate.getTime() - now.getTime();
