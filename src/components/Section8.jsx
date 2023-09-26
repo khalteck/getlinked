@@ -25,7 +25,7 @@ const Section8 = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className="w-full min-h-[150px] md:min-h-[500px] mt-10 border border-[#D434FE] rounded-lg flex justify-center items-center p-[5%] md:p-10"
+          className="w-full min-h-[150px] md:min-h-[200px] lg:min-h-[500px] mt-10 border border-[#D434FE] rounded-lg flex justify-center items-center p-[5%] md:p-10"
         >
           <div className="w-[70%] min-h-[100px] md:min-h-[200px] grid grid-cols-3">
             <div className="flex justify-center items-center p-5 relative">
