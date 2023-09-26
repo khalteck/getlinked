@@ -1,6 +1,6 @@
 const Section8 = () => {
   return (
-    <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-[100px] bg-transparent border-white/10 border-b font-medium bg-red-500 relative">
+    <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-[100px] bg-transparent border-white/10 border-b font-medium relative">
       <div className="w-full">
         <div className="w-full flex flex-col gap-5">
           <h2
@@ -25,12 +25,12 @@ const Section8 = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className="w-full min-h-[150px] md:min-h-[500px] mt-10 border border-[#D434FE] rounded-lg flex justify-center items-center"
+          className="w-full min-h-[150px] md:min-h-[500px] mt-10 border border-[#D434FE] rounded-lg flex justify-center items-center p-[5%] md:p-[1%]"
         >
           <div className="w-[70%] min-h-[100px] md:min-h-[200px] grid grid-cols-3">
             <div className="flex justify-center items-center p-5 relative">
               <img
-                className="w-[80%] md:w-[50%] h-auto"
+                className="w-[90%] md:w-[50%] h-auto"
                 alt=""
                 src="/images/p1.png"
               />
@@ -38,7 +38,7 @@ const Section8 = () => {
             </div>
             <div className="flex justify-center items-center border-x-2 border-[#D434FE] p-5">
               <img
-                className="w-[90%] md:w-[70%] h-auto"
+                className="w-[95%] md:w-[70%] h-auto"
                 alt=""
                 src="/images/p2.png"
               />
@@ -46,28 +46,28 @@ const Section8 = () => {
             <div className="flex justify-center items-center border-[#D434FE] p-5 relative">
               <div className="w-[25px] h-[25px] md:w-[50px] md:h-[50px] bg-[#150E28] rounded-full absolute bottom-[-12.5px] left-[-12.5px] md:bottom-[-25px] md:left-[-25px]"></div>
               <img
-                className="w-[80%] md:w-[50%] h-auto"
+                className="w-[90%] md:w-[50%] h-auto"
                 alt=""
                 src="/images/p3.png"
               />
             </div>
             <div className="flex justify-center items-center border-t-2 border-[#D434FE] p-5">
               <img
-                className="w-[80%] md:w-[50%] h-auto"
+                className="w-[90%] md:w-[50%] h-auto"
                 alt=""
                 src="/images/p4.png"
               />
             </div>
             <div className="flex justify-center items-center border-x-2 border-t-2 border-[#D434FE] p-5">
               <img
-                className="w-[90%] md:w-[70%] h-auto"
+                className="w-[95%] md:w-[70%] h-auto"
                 alt=""
                 src="/images/p5.png"
               />
             </div>
             <div className="flex justify-center items-center border-t-2 border-[#D434FE] p-5">
               <img
-                className="w-[90%] md:w-[70%] h-auto"
+                className="w-[95%] md:w-[70%] h-auto"
                 alt=""
                 src="/images/p6.png"
               />
