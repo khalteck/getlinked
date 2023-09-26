@@ -5,7 +5,7 @@ const Timeline = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="200"
-        className="flex gap-20 items-end"
+        className="flex gap-10 lg:gap-20 items-end"
       >
         <div className="w-full flex flex-col gap-2 text-end">
           <p className="text-[#D434FE]">Hackathon Announcement</p>
@@ -29,7 +29,7 @@ const Timeline = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="200"
-        className="flex flex-row-reverse gap-20 items-end"
+        className="flex flex-row-reverse gap-10 lg:gap-20 items-end"
       >
         <div className="w-full flex flex-col gap-2 text-start">
           <p className="text-[#D434FE]">Teams Registration begins</p>
@@ -53,7 +53,7 @@ const Timeline = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="200"
-        className="flex gap-20 items-end"
+        className="flex gap-10 lg:gap-20 items-end"
       >
         <div className="w-full flex flex-col gap-2 text-end">
           <p className="text-[#D434FE]">Teams Registration ends</p>
@@ -74,7 +74,7 @@ const Timeline = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="200"
-        className="flex flex-row-reverse gap-20 items-end"
+        className="flex flex-row-reverse gap-10 lg:gap-20 items-end"
       >
         <div className="w-full flex flex-col gap-2 text-start">
           <p className="text-[#D434FE]">
@@ -100,7 +100,7 @@ const Timeline = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="200"
-        className="flex gap-20 items-end"
+        className="flex gap-10 lg:gap-20 items-end"
       >
         <div className="w-full flex flex-col gap-2 text-end">
           <p className="text-[#D434FE]">
@@ -126,7 +126,7 @@ const Timeline = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="200"
-        className="flex flex-row-reverse gap-20 items-end"
+        className="flex flex-row-reverse gap-10 lg:gap-20 items-end"
       >
         <div className="w-full flex flex-col gap-2 text-start">
           <p className="text-[#D434FE]">Demo Day</p>
