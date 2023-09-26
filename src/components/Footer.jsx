@@ -32,7 +32,7 @@ const Footer = () => {
               onClick={() => scrollToTimeline("privacy")}
               className="cursor-pointer hover:gradient-text transition-all duration-300"
             >
-              Terms od Use
+              Terms of Use
             </p>
             <div className="w-[3px] h-6 rounded-full bg-[#D434FE]"></div>
             <p
