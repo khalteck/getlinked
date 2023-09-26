@@ -1,7 +1,12 @@
 const Timeline = () => {
   return (
     <div className="w-full flex flex-col">
-      <div className="flex gap-20 items-end">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="flex gap-20 items-end"
+      >
         <div className="w-full flex flex-col gap-2 text-end">
           <p className="text-[#D434FE]">Hackathon Announcement</p>
           <p>
@@ -20,7 +25,12 @@ const Timeline = () => {
         </div>
       </div>
 
-      <div className="flex flex-row-reverse gap-20 items-end">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="flex flex-row-reverse gap-20 items-end"
+      >
         <div className="w-full flex flex-col gap-2 text-start">
           <p className="text-[#D434FE]">Teams Registration begins</p>
           <p>
@@ -39,7 +49,12 @@ const Timeline = () => {
         </div>
       </div>
 
-      <div className="flex gap-20 items-end">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="flex gap-20 items-end"
+      >
         <div className="w-full flex flex-col gap-2 text-end">
           <p className="text-[#D434FE]">Teams Registration ends</p>
           <p>Interested Participants are no longer Allowed to register</p>
@@ -55,7 +70,12 @@ const Timeline = () => {
         </div>
       </div>
 
-      <div className="flex flex-row-reverse gap-20 items-end">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="flex flex-row-reverse gap-20 items-end"
+      >
         <div className="w-full flex flex-col gap-2 text-start">
           <p className="text-[#D434FE]">
             Announcement of the accepted teams and ideas
@@ -76,7 +96,12 @@ const Timeline = () => {
         </div>
       </div>
 
-      <div className="flex gap-20 items-end">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="flex gap-20 items-end"
+      >
         <div className="w-full flex flex-col gap-2 text-end">
           <p className="text-[#D434FE]">
             Getlinked Hackathon 1.0 Offically Begins
@@ -97,7 +122,12 @@ const Timeline = () => {
         </div>
       </div>
 
-      <div className="flex flex-row-reverse gap-20 items-end">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="flex flex-row-reverse gap-20 items-end"
+      >
         <div className="w-full flex flex-col gap-2 text-start">
           <p className="text-[#D434FE]">Demo Day</p>
           <p>

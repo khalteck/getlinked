@@ -1,6 +1,6 @@
 const Section7 = () => {
   return (
-    <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-16 bg-transparent border-white/10 border-b font-medium bg-red-500 relative">
+    <section className="min-h-[300px] px-10 lg:px-[150px] pb-16 pt-10 md:py-16 bg-[#110b21]/90 border-white/10 border-b font-medium relative">
       <div className="w-full flex md:flex-row flex-col justify-center items-center gap-[10%]">
         <img
           data-aos="zoom-in"
